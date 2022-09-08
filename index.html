@@ -15,13 +15,14 @@
             <div class="budget_header">
                 <div class="balance">
                     <h1>Your budget</h1>
-                    <div class="value"></div>
+                    <div class="value">0&#8381;</div>
                 </div>
                 <div class="money_changes">
                     <div class="increase">
                         <div class="title"></div>
                         <div class="increase_total"></div>
                     </div>
+                    <div class="circle"></div>
                     <div class="decrease">
                         <div class="title"></div>
                         <div class="decrease_total"></div>
@@ -37,7 +38,7 @@
                 </div>
                 <div id="decrease">
                     <ul class="list">
-                        <li id="0" class="increase">
+                        <li id="0" class="decrease">
                             <div class="entry"></div>
                             <div class="edit"></div>
                             <div class="delete"></div>
@@ -46,14 +47,40 @@
                     <div class="input">
                         <input type="text" id="decrease_title_input" name="title" placeholder="Расход">
                         <input type="number" id="decrease_amount_input" name="amount" placeholder="Сумма">
-                        <div class="add-decrease"><img src="images/add.png" alt=""></div>
+                        <div class="add_decrease"><img src="images/add.png" alt=""></div>
                     </div>
                 </div>
-                <div class="hide" id="increase"></div>
-                <div class="hide" id="all"></div>
+                <div class="hide" id="increase">
+                    <ul class="list">
+                        <li id="0" class="increase">
+                            <div class="entry"></div>
+                            <div class="edit"></div>
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                    <div class="input">
+                        <input type="text" id="increase_title_input" name="title" placeholder="Расход">
+                        <input type="number" id="increase_amount_input" name="amount" placeholder="Сумма">
+                        <div class="add_increase"><img src="images/add.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="hide" id="all">
+                    <ul class="list">
+                        <li id="0" class="all">
+                            <div class="entry"></div>
+                            <div class="edit"></div>
+                            <div class="delete"></div>
+                        </li>
+                    </ul>
+                    <!-- <div class="input">
+                        <input type="text" id="increase_title_input" name="title" placeholder="Расход">
+                        <input type="number" id="increase_amount_input" name="amount" placeholder="Сумма">
+                        <div class="add_increase"><img src="images/add.png" alt=""></div>
+                    </div> -->
+                </div>
             </div>
         </div>
     </main>
-    
+    <script src="main.js"></script>
 </body>
 </html>
